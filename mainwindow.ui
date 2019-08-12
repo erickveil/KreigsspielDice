@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>393</width>
-    <height>467</height>
+    <width>554</width>
+    <height>284</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>10</x>
       <y>10</y>
       <width>231</width>
-      <height>441</height>
+      <height>261</height>
      </rect>
     </property>
     <property name="title">
@@ -32,14 +32,14 @@
        <x>10</x>
        <y>20</y>
        <width>211</width>
-       <height>411</height>
+       <height>231</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QRadioButton" name="rbHlfBatCloseOrder">
         <property name="text">
-         <string>Infantry firing without cover</string>
+         <string>Infantry firing</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -47,23 +47,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton">
-        <property name="text">
-         <string>Infantry firing with cover</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QRadioButton" name="rbHlfBtlnSkrimishFire">
         <property name="text">
-         <string>Skirmishers firing without cover</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_2">
-        <property name="text">
-         <string>Skirmishers firing with cover</string>
+         <string>Skirmishers firing</string>
         </property>
        </widget>
       </item>
@@ -77,40 +63,20 @@
       <item>
        <widget class="QRadioButton" name="radioButton_3">
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Good Effect: This is defined for Canister Shot at point blank range and low elevation or for Random or Ricochet shot as “when the ground between the battery and the target is even, with no slope up or down of more than 10°. For High Elevation range this is when the battery has a clear view for 200 paces before and behind the target.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string/>
         </property>
         <property name="text">
-         <string>2 @ 7 lb battery with  good effect</string>
+         <string>6 or 7 lb battery</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QRadioButton" name="radioButton_5">
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Good Effect: This is defined for Canister Shot at point blank range and low elevation or for Random or Ricochet shot as “when the ground between the battery and the target is even, with no slope up or down of more than 10°. For High Elevation range this is when the battery has a clear view for 200 paces before and behind the target.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string/>
         </property>
         <property name="text">
-         <string>8 @ 7 lb battery with good effect</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_8">
-        <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bad Effect is when the ground between the battery and the target is swampy or marshy, when there are intervening hedges, it is broken or undulating or rises or falls more than 10°. For High Elevation range this is where the above occurs or there is no clear view around the target.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="text">
-         <string>2 @ 7 lb battery with bad effect</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_9">
-        <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bad Effect is when the ground between the battery and the target is swampy or marshy, when there are intervening hedges, it is broken or undulating or rises or falls more than 10°. For High Elevation range this is where the above occurs or there is no clear view around the target.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="text">
-         <string>8 @ 7 lb battery with bad effect</string>
+         <string>10 or 12 lb battery</string>
         </property>
        </widget>
       </item>
@@ -141,10 +107,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>390</x>
       <y>10</y>
-      <width>131</width>
-      <height>141</height>
+      <width>151</width>
+      <height>161</height>
      </rect>
     </property>
     <property name="title">
@@ -155,8 +121,8 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>111</width>
-       <height>111</height>
+       <width>131</width>
+       <height>131</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -198,9 +164,9 @@
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>160</y>
+      <y>10</y>
       <width>131</width>
-      <height>231</height>
+      <height>161</height>
      </rect>
     </property>
     <property name="title">
@@ -212,7 +178,7 @@
        <x>10</x>
        <y>20</y>
        <width>111</width>
-       <height>201</height>
+       <height>131</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -251,6 +217,90 @@
        <widget class="QRadioButton" name="rb41">
         <property name="text">
          <string>4:1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Infantry Conditions</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QRadioButton" name="radioButton_10">
+        <property name="text">
+         <string>Firing without cover</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_11">
+        <property name="text">
+         <string>Firing with cover</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>180</y>
+      <width>131</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Artilery Conditions</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>Good Effect</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>Bad Effect</string>
         </property>
        </widget>
       </item>

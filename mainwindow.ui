@@ -6,305 +6,218 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>554</width>
-    <height>284</height>
+    <width>375</width>
+    <height>357</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>231</width>
-      <height>261</height>
+      <width>351</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="title">
-     <string>Table</string>
+     <string>Infantry Fire</string>
     </property>
-    <widget class="QWidget" name="verticalLayoutWidget">
+    <widget class="QGroupBox" name="gbInfAttacker">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>211</width>
-       <height>231</height>
+       <width>171</width>
+       <height>121</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QRadioButton" name="rbHlfBatCloseOrder">
-        <property name="text">
-         <string>Infantry firing</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rbHlfBtlnSkrimishFire">
-        <property name="text">
-         <string>Skirmishers firing</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rbHandToHand">
-        <property name="text">
-         <string>Hand to Hand Combat</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_3">
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="text">
-         <string>6 or 7 lb battery</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_5">
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="text">
-         <string>10 or 12 lb battery</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_4">
-        <property name="text">
-         <string>Does Bombardment Start Fire?</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_6">
-        <property name="text">
-         <string>Does brick/stone building fire spread?</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_7">
-        <property name="text">
-         <string>Does wood building fire spread?</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="title">
+      <string>Attacker</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>153</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="rbInfAttHalfBat">
+         <property name="text">
+          <string>Half Battalion</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rbInfAttJaggers">
+         <property name="text">
+          <string>Two Skirmish Jagers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rbInfAttLineInf">
+         <property name="text">
+          <string>Two Skirmish Line Infantry</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>10</y>
-      <width>151</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Range</string>
-    </property>
-    <widget class="QWidget" name="verticalLayoutWidget_2">
+    <widget class="QGroupBox" name="gbInfRange">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>190</x>
        <y>20</y>
-       <width>131</width>
-       <height>131</height>
+       <width>151</width>
+       <height>171</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QRadioButton" name="rb100Paces">
-        <property name="text">
-         <string>Up to 100 paces</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb200Paces">
-        <property name="text">
-         <string>100 to 200 paces</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb300Paces">
-        <property name="text">
-         <string>200 to 300 paces</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb400Paces">
-        <property name="text">
-         <string>300 to 400 paces</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="title">
+      <string>Range</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>131</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QRadioButton" name="rbInfRange400">
+         <property name="text">
+          <string>300 - 400 paces</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rbInfRange300">
+         <property name="text">
+          <string>200 - 300 paces</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rbInfRange200">
+         <property name="text">
+          <string>100 - 200 paces</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rbInfRange100">
+         <property name="text">
+          <string>less than 100 paces</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>10</y>
-      <width>131</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Hand to Hand Odds</string>
-    </property>
-    <widget class="QWidget" name="verticalLayoutWidget_3">
+    <widget class="QPushButton" name="pbInfFire">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>111</width>
-       <height>131</height>
+       <x>220</x>
+       <y>210</y>
+       <width>80</width>
+       <height>21</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QRadioButton" name="rb11">
-        <property name="text">
-         <string>1:1</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb32">
-        <property name="text">
-         <string>3:2</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb21">
-        <property name="text">
-         <string>2:1</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb31">
-        <property name="text">
-         <string>3:1</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="rb41">
-        <property name="text">
-         <string>4:1</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="text">
+      <string>Fire!</string>
+     </property>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>180</y>
-      <width>151</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Infantry Conditions</string>
-    </property>
-    <widget class="QWidget" name="verticalLayoutWidget_4">
+    <widget class="QGroupBox" name="groupBox">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
-       <width>131</width>
-       <height>61</height>
+       <y>150</y>
+       <width>171</width>
+       <height>80</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <widget class="QRadioButton" name="radioButton_10">
-        <property name="text">
-         <string>Firing without cover</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_11">
-        <property name="text">
-         <string>Firing with cover</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="title">
+      <string>Cover</string>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>160</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="cbInfAttCover">
+         <property name="text">
+          <string>Attacker has cover</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cbInfDefCover">
+         <property name="text">
+          <string>Defender has cover</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>180</y>
-      <width>131</width>
-      <height>91</height>
+      <x>10</x>
+      <y>270</y>
+      <width>351</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="title">
-     <string>Artilery Conditions</string>
+     <string>Results</string>
     </property>
-    <widget class="QWidget" name="verticalLayoutWidget_5">
+    <widget class="QLineEdit" name="lePointsDmg">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
-       <width>111</width>
-       <height>61</height>
+       <y>30</y>
+       <width>91</width>
+       <height>16</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_5">
-      <item>
-       <widget class="QRadioButton" name="radioButton">
-        <property name="text">
-         <string>Good Effect</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_2">
-        <property name="text">
-         <string>Bad Effect</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="text">
+      <string>Points of Damage</string>
+     </property>
     </widget>
    </widget>
   </widget>

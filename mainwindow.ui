@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>375</width>
-    <height>357</height>
+    <height>398</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -59,16 +59,16 @@
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="rbInfAttJaggers">
+        <widget class="QRadioButton" name="rbInfAttLineInf">
          <property name="text">
-          <string>Two Skirmish Jagers</string>
+          <string>Skirmishers</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="rbInfAttLineInf">
+        <widget class="QRadioButton" name="rbInfAttJaggers">
          <property name="text">
-          <string>Two Skirmish Line Infantry</string>
+          <string>Jagers</string>
          </property>
         </widget>
        </item>
@@ -190,34 +190,43 @@
       <x>10</x>
       <y>270</y>
       <width>351</width>
-      <height>71</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>Results</string>
     </property>
-    <widget class="QLineEdit" name="lePointsDmg">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>30</y>
-       <width>113</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QWidget" name="formLayoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>91</width>
-       <height>16</height>
+       <width>331</width>
+       <height>71</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Points of Damage</string>
-     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Dice Reference</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="leDieRef"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Points of Damage</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lePointsDmg"/>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>

@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "infantryfire.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -10,6 +12,8 @@ class MainWindow;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+
+    InfantryFire _infFire;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);

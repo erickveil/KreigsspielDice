@@ -25,13 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        dice.cpp \
         infantryfire.cpp \
+        kriegsspieldie.cpp \
+        kriegsspielface.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        randomtable.cpp \
+        tableentry.cpp
 
 HEADERS += \
+        dice.h \
         infantryfire.h \
-        mainwindow.h
+        kriegsspieldie.h \
+        kriegsspielface.h \
+        mainwindow.h \
+        randomtable.h \
+        tableentry.h
 
 FORMS += \
         mainwindow.ui

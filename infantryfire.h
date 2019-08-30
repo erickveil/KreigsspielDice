@@ -19,7 +19,8 @@ public:
 
     /**
      * @brief attackResult
-     * Catchall attack roll that references the other infantry attack methods for results
+     * Catchall attack roll that references the other infantry attack methods
+     * for results
      *
      * @param type
      * @param range
@@ -27,7 +28,8 @@ public:
      * @param isTargetCover
      * @return
      */
-    int attackResult(InfantryType type, InfantryRange range, bool isAttackerCover, bool isTargetCover);
+    int attackResult(InfantryType type, InfantryRange range,
+                     bool isAttackerCover, bool isTargetCover);
 
     /**
      * @brief halfBatAttack
@@ -42,30 +44,35 @@ public:
 
     /**
      * @brief skirmisherAttack
-     * The standard lineman/rifleman skirmisher attack. Two zugs (half battalion).
+     * The standard lineman/rifleman skirmisher attack. Two zugs (half
+     * battalion).
      *
      * @param range
      * @param isAttackerCover
      * @param isTargetCover
      * @return
      */
-    int skirmisherAttack(InfantryRange range, bool isAttackerCover, bool isTargetCover);
+    int skirmisherAttack(InfantryRange range, bool isAttackerCover,
+                         bool isTargetCover);
 
     /**
      * @brief jagerAttack
-     * Attack roll for jagers/rangers in a skirmish line. Two zugs (half battalion).
+     * Attack roll for jagers/rangers in a skirmish line. Two zugs (half
+     * battalion).
      *
      * @param range
      * @param isAttackerCover
      * @param isTargetCover
      * @return
      */
-    int jagerAttack(InfantryRange range, bool isAttackerCover, bool isTargetCover);
+    int jagerAttack(InfantryRange range, bool isAttackerCover,
+                    bool isTargetCover);
 
     /**
      * @brief getLastRef
-     * Returns a string that describes which die to roll and where on that die you will find the value that
-     * you are looking for. This is useful when training yourself how to use the dice.
+     * Returns a string that describes which die to roll and where on that die
+     * you will find the value that you are looking for. This is useful when
+     * training yourself how to use the dice.
      *
      * @return Returns the location of where to look for the correct result
      */

@@ -6,7 +6,9 @@ InfantryFire::InfantryFire()
     _dieII.initAsII();
 }
 
-int InfantryFire::attackResult(InfantryFire::InfantryType type, InfantryFire::InfantryRange range, bool isAttackerCover, bool isTargetCover)
+int InfantryFire::attackResult(InfantryFire::InfantryType type,
+                               InfantryFire::InfantryRange range,
+                               bool isAttackerCover, bool isTargetCover)
 {
     switch (type) {
     case INF_TYPE_HALF_BAT:
@@ -18,7 +20,8 @@ int InfantryFire::attackResult(InfantryFire::InfantryType type, InfantryFire::In
     }
 }
 
-int InfantryFire::halfBatAttack(InfantryFire::InfantryRange range, bool isTargetCover)
+int InfantryFire::halfBatAttack(InfantryFire::InfantryRange range,
+                                bool isTargetCover)
 {
     KriegsspielFace result = _dieI.roll();
     _lastRef = "Die I; Left Col; Row ";
@@ -49,7 +52,8 @@ int InfantryFire::halfBatAttack(InfantryFire::InfantryRange range, bool isTarget
     return points;
 }
 
-int InfantryFire::skirmisherAttack(InfantryFire::InfantryRange range, bool isAttackerCover, bool isTargetCover)
+int InfantryFire::skirmisherAttack(InfantryFire::InfantryRange range,
+                                   bool isAttackerCover, bool isTargetCover)
 {
     KriegsspielDie die;
     if (!isAttackerCover) {
@@ -89,7 +93,8 @@ int InfantryFire::skirmisherAttack(InfantryFire::InfantryRange range, bool isAtt
     return points;
 }
 
-int InfantryFire::jagerAttack(InfantryFire::InfantryRange range, bool isAttackerCover, bool isTargetCover)
+int InfantryFire::jagerAttack(InfantryFire::InfantryRange range,
+                              bool isAttackerCover, bool isTargetCover)
 {
     KriegsspielDie die;
     if (!isAttackerCover) {

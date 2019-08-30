@@ -22,6 +22,8 @@ public:
 private slots:
     void on_pbInfFire_clicked();
 
+    void on_pbArtilleryFire_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

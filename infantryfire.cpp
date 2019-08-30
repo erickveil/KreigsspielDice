@@ -42,7 +42,10 @@ int InfantryFire::halfBatAttack(InfantryFire::InfantryRange range, bool isTarget
         _lastRef += "1";
     }
 
-    if (isTargetCover) { points = static_cast<int>( std::round(points / 2) ); }
+    if (isTargetCover) {
+        points = static_cast<int>( std::round(points / 2) );
+        _lastRef += "; damage halved";
+    }
     return points;
 }
 
@@ -79,7 +82,10 @@ int InfantryFire::skirmisherAttack(InfantryFire::InfantryRange range, bool isAtt
         _lastRef += "1";
     }
 
-    if (isTargetCover) { points = static_cast<int>( std::round(points / 2) ); }
+    if (isTargetCover) {
+        points = static_cast<int>( std::round(points / 2) );
+        _lastRef += "; damage halved";
+    }
     return points;
 }
 
@@ -138,7 +144,10 @@ int InfantryFire::jagerAttack(InfantryFire::InfantryRange range, bool isAttacker
         }
     }
 
-    if (isTargetCover) { points = static_cast<int>( std::round(points / 2) ); }
+    if (isTargetCover) {
+        points = static_cast<int>( std::round(points / 2) );
+        _lastRef += "; damage halved";
+    }
     return points;
 
 }

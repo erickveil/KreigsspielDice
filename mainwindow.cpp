@@ -36,3 +36,8 @@ void MainWindow::on_pbInfFire_clicked()
     ui->leDieRef->setText(dieRef);
 
 }
+
+void MainWindow::on_pbArtilleryFire_clicked()
+{
+
+}

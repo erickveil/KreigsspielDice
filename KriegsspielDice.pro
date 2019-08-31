@@ -33,7 +33,8 @@ SOURCES += \
         mainwindow.cpp \
         randomtable.cpp \
         tableentry.cpp \
-    artilleryfire.cpp
+    artilleryfire.cpp \
+    targetfactors.cpp
 
 HEADERS += \
         dice.h \
@@ -43,7 +44,8 @@ HEADERS += \
         mainwindow.h \
         randomtable.h \
         tableentry.h \
-    artilleryfire.h
+    artilleryfire.h \
+    targetfactors.h
 
 FORMS += \
         mainwindow.ui

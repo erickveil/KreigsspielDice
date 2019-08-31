@@ -1,6 +1,8 @@
 #ifndef ARTILLERYFIRE_H
 #define ARTILLERYFIRE_H
 
+#include "kriegsspieldie.h"
+#include "targetfactors.h"
 
 /**
  * @brief The ArtilleryFire class
@@ -11,8 +13,29 @@
  */
 class ArtilleryFire
 {
+    KriegsspielDie _dieIII;
+    KriegsspielDie _dieIV;
+    QString _lastRef;
+
 public:
+    enum ArtilleryRange { ART_CANISTER, ART_LOW, ART_HIGH, ART_RICOCHET };
+    enum ArtilleryType { ART_TYPE_12, ART_TYPE_6, ART_TYPE_7, ART_TYPE_10 };
+    enum Effect { GOOD, BAD };
     ArtilleryFire();
+
+    int attackResult(ArtilleryType type, ArtilleryRange range, Effect effect,
+                     TargetFactors factors);
+
+    int fireTwelveLb(ArtilleryRange range, Effect effect,
+                     TargetFactors factors);
+
+    int fireSixLb(ArtilleryRange range, Effect effect, TargetFactors factors);
+
+    int fireSevenLb(ArtilleryRange range, Effect effect, TargetFactors factors);
+
+    int fireTenLb(ArtilleryRange range, Effect effect, TargetFactors factors);
+
+    QString getLastRef();
 };
 
 #endif // ARTILLERYFIRE_H

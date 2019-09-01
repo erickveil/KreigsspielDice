@@ -369,7 +369,7 @@
        </layout>
       </widget>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -398,6 +398,13 @@
             <widget class="QCheckBox" name="cbArtilleryCover">
              <property name="text">
               <string>Has cover</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="cbDeepCover">
+             <property name="text">
+              <string>200+ paces into cover</string>
              </property>
             </widget>
            </item>

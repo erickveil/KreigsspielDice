@@ -39,5 +39,35 @@ void MainWindow::on_pbInfFire_clicked()
 
 void MainWindow::on_pbArtilleryFire_clicked()
 {
+    ArtilleryFire::ArtilleryType type;
+    if (ui->rbBat6->isChecked()) { type = ArtilleryFire::ART_TYPE_6; }
+    else if (ui->rbBat7->isChecked()) { type = ArtilleryFire::ART_TYPE_7; }
+    else if (ui->rbBat10lb->isChecked()) { type = ArtilleryFire::ART_TYPE_10; }
+    else { type = ArtilleryFire::ART_TYPE_12; }
+
+    ArtilleryFire::ArtilleryRange range;
+    if (ui->rbCanister->isChecked()) { range = ArtilleryFire::ART_CANISTER; }
+    else if (ui->rbLow->isChecked()) { range = ArtilleryFire::ART_LOW; }
+    else if (ui->rbHigh->isChecked()) { range = ArtilleryFire::ART_HIGH; }
+    else { range = ArtilleryFire::ART_RICOCHET; }
+
+    ArtilleryFire::Effect effect;
+    if (ui->rbGoodEffect->isChecked()) { effect = ArtilleryFire::GOOD_EFFECT; }
+    else { effect = ArtilleryFire::BAD_EFFECT; }
+
+    TargetFactors factors;
+    factors.HasCover = ui->cbArtilleryCover->isChecked();
+    factors.DeepCover = ui->cbDeepCover->isChecked();
+    factors.TwoCol = ui->cbArtillery2Col->isChecked();
+    factors.Grenade = ui->cbGrenadeFire->isChecked();
+    factors.TwoLines = ui->cbArt2Lines->isChecked();
+    factors.Skirmishers = ui->cbArtillerySkirmishers->isChecked();
+    factors.Flanking = ui->cbFlanks->isChecked();
+
+    int points = _artFire.attackResult(type, range, effect, factors);
+    QString dieRef = _artFire.getLastRef();
+
+    ui->lePointsDmg->setText(QString::number(points) + " points");
+    ui->leDieRef->setText(dieRef);
 
 }

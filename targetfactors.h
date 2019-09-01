@@ -6,6 +6,7 @@ class TargetFactors
 {
 public:
     bool HasCover;
+    bool DeepCover;
     bool TwoCol;
     bool Grenade;
     bool TwoLines;

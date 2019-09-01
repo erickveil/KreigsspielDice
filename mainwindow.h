@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 #include "infantryfire.h"
+#include "artilleryfire.h"
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
     InfantryFire _infFire;
+    ArtilleryFire _artFire;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);

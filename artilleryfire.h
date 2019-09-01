@@ -3,6 +3,8 @@
 
 #include <cmath>
 
+#include <QDebug>
+
 #include "kriegsspieldie.h"
 #include "targetfactors.h"
 

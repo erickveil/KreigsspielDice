@@ -1,3 +1,8 @@
+/**
+ *infantryfire.h
+ * Erick Veil
+ * Copyright 2019 Erick Veil
+ */
 #ifndef INFANTRYFIRE_H
 #define INFANTRYFIRE_H
 
@@ -5,16 +10,38 @@
 
 #include "kriegsspieldie.h"
 
+/**
+ * @brief The InfantryFire class
+ * Handles resolving infantry fire.
+ */
 class InfantryFire
 {
+    /**
+     * @brief _dieI Half battallions, skirmishers and jaggers without cover, all
+     * use die I.
+     */
     KriegsspielDie _dieI;
+
+    /**
+     * @brief _dieII Skirmishers and jaggers firing from cover use die II and
+     * do more damage.
+     */
     KriegsspielDie _dieII;
 
+    /**
+     * @brief _lastRef holds the last roll's instructions for performing the
+     * roll yourself with actual dice.
+     */
     QString _lastRef;
 
 public:
     enum InfantryRange { INF_POINT_BLANK, INF_SHORT, INF_MEDIUM, INF_LONG };
     enum InfantryType { INF_TYPE_HALF_BAT, INF_TYPE_JAGER, INF_TYPE_SKIRMISH};
+
+    /**
+     * @brief InfantryFire
+     * Initializes the dice.
+     */
     InfantryFire();
 
     /**

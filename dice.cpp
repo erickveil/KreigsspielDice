@@ -7,7 +7,12 @@ Dice::Dice()
 int Dice::randomNumber(int min, int max)
 {
     //qsrand(QDateTime::currentMSecsSinceEpoch());
-    return qRound(((double)(qrand() % (max+1 - min)) + (double)min));
+    return qRound(
+                static_cast<double>(
+                    qrand() % (max + 1 - min)
+                    )
+                + static_cast<double>(min)
+                );
 }
 
 int Dice::roll(int number, int sides, int mod)
